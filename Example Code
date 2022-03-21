@@ -9,12 +9,12 @@ from sh import lp
 lp('your_filename_here.ext')
 
 # set path (printing files from different folders)
-lp('/your/folders/here/your_filename_here.ext')
+lp('/your/path/folders/here/your_filename_here.ext')
 
 # Line_Print_Change_Printer/ using string variables as arguments
 lp_cp = lp.bake('-d')
 printername = 'your_printername_here'
-path = '/your/folders/here/'
+path = '/your/path/here/'
 filename = 'your_filename_here.ext'
 file2print = path + filename
 
@@ -22,10 +22,11 @@ lp_cp (printername, file2print)
 
 # format options:
 landscape = '-o landscape’
-portrait = ‘-o portrait’
+portrait = ‘-o portrait’.  #default
 scale = '-o fit-to-page'
 sided = '-o two-sides-long-edge'
 pages2print = '-o page_ranges = 1-2,4,6-8'
+path = '/your/path/here/'
 filename = 'your_file_here.ext'
 file2print = path + filename
 
